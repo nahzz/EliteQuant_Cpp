@@ -39,7 +39,7 @@ void ClientMQ::run()
     while(1)
     {
 
-        //获取消息
+        //get info
         char *buf = NULL;
         int bytes = nn_recv (tick_sock, &buf, NN_MSG, 0);
         if(bytes>0)
